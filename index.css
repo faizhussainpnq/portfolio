@@ -1,0 +1,826 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    position: relative;
+    margin: 0;
+    background-color: black;
+    overflow-x: hidden;
+}
+
+.img {
+    background-image: url("image40.jpg");
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 18vh;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    width: 20vw;
+    height: 30vh;
+}
+
+ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-size: 2vw;
+    padding: 1vw;
+    color: white;
+    font-weight: 300;
+    transition: all 0.2s;
+}
+
+nav ul li a:hover {
+    color: rgb(249, 99, 5);
+}
+
+.text {
+    /* text-align: center; */
+    color: rgba(255, 204, 0, 0.876);
+    font-size: 3vw;
+    margin-left: 5%;
+    margin-top: -10%;
+}
+
+#element {
+    color: rgb(249, 99, 5);
+}
+
+.margin {
+    width: 100%;
+    height: 8vh;
+    background-color: rgb(93, 93, 191);
+}
+
+.biobox {
+    width: 100%;
+    height: 90vh;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.bioimg {
+    width: 40%;
+    height: 70vh;
+}
+
+.bioimg img {
+    width: 50vw;
+    height: 80vh;
+}
+
+.biotext {
+    width: 50%;
+    height: 70vh;
+}
+
+.about-heading {
+    color: rgb(244, 120, 5);
+    text-align: center;
+    font-size: 4vw;
+    margin-top: 1vw;
+}
+
+.bio-text {
+    color: white;
+    font-size: 2vw;
+    margin-top: 4vw;
+    margin-left: 3vw;
+}
+
+.menu {
+    width: 40vw;
+    height: 7vh;
+    margin-top: 8vw;
+    margin-left: 3vw;
+    display: flex;
+    align-items: center;
+}
+
+.resume {
+    border: 1px solid rgb(46, 135, 46);
+    border-radius: 0.3vw;
+    height: 6vh;
+    width: 8vw;
+    color: rgb(46, 135, 46);
+    font-size: 1.1vw;
+    margin: 1vw;
+    transition: all 0.2s;
+}
+
+.resume:hover {
+    color: white;
+    background-color: rgb(46, 135, 46);
+    transform: scale(1.05);
+}
+
+.talk {
+    border: 1px solid rgb(0, 40, 101);
+    border-radius: 0.3vw;
+    height: 6vh;
+    width: 8vw;
+    color: rgb(0, 40, 101);
+    font-size: 1.1vw;
+    margin: 1vw;
+    transition: all 0.2s;
+}
+
+.talk:hover {
+    color: white;
+    background-color: rgb(0, 40, 101);
+    transform: scale(1.05);
+}
+
+.github {
+    border: 1px solid rgb(36, 41, 46);
+    border-radius: 0.3vw;
+    height: 6vh;
+    width: 8vw;
+    color: rgb(36, 41, 46);
+    font-size: 1.1vw;
+    margin: 1vw;
+    transition: all 0.2s;
+}
+
+.github:hover {
+    color: white;
+    background-color: rgb(36, 41, 46);
+    transform: scale(1.05);
+}
+
+.linkedin {
+    border: 1px solid rgb(10, 102, 194);
+    border-radius: 0.3vw;
+    height: 6vh;
+    width: 8vw;
+    color: rgb(10, 102, 194);
+    font-size: 1.1vw;
+    margin: 1vw;
+    transition: all 0.2s;
+}
+
+.linkedin:hover {
+    color: white;
+    background-color: rgb(10, 102, 194);
+    transform: scale(1.05);
+}
+
+.skill {
+    height: 80vh;
+    width: 100%;
+    background-color: rgb(93, 93, 191);
+    font-size: 2vw;
+}
+
+.head {
+    font-weight: 400;
+    text-align: center;
+    color: white;
+    padding: 1vw;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
+}
+
+.skillmain{
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+}
+
+.skillbox{
+    width: 42vw;
+    height: 40vh;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.html, .css ,.Javascript,.bootstrap,.tailwind,.react{
+    width: 13.4vw;
+    height: 12.5vh;
+    border: 0.1vw solid white;
+    border-radius: 0.3vw;
+    background-color: white;
+    margin: 0.3vw;
+    transition: all 0.2s;
+}
+
+
+.Github,.netlify{
+    width: 20vw;
+    height: 12.5vh;
+    border: 0.1vw solid white;
+    border-radius: 0.3vw;
+    background-color: white;
+    margin: 0.3vw;
+    transition: all 0.2s;  
+}
+
+.html:hover, .css:hover, .Javascript:hover ,.bootstrap:hover,.tailwind:hover,.react:hover,
+.Github:hover,.netlify:hover{
+    transform: scale(1.05);
+}
+
+.html img,.css img,.Javascript img,.bootstrap img,.tailwind img,.react img,.Github img,.netlify img{
+    width: 5vw;
+    height: 10vh;
+}
+
+.html p,.css p,.Javascript p,.bootstrap p,.tailwind p,.react p,.Github p,.netlify p{
+    text-align: center;
+    font-size: 1.2vw;
+    font-weight: 600;
+    color: black;
+}
+
+.html a,.css a,.Javascript a,.bootstrap a,.tailwind a,.react a,.Github a,.netlify a{
+    text-decoration: none;
+}
+   
+.line{
+    height: 0.05vw;
+    width: 100%;
+    background: linear-gradient(to bottom right, transparent, white, transparent);
+}
+
+.projectbg{
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(93, 93, 191);
+}
+
+.projectbg h2{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    font-weight: 400;
+    font-size: 2.5vw;
+    padding-top: 2.5vw;
+    color: white;
+}
+
+.probox{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.form{
+    width: 50vw;
+    height: 60vh;
+    border-radius: 0.5vw 0.5vw 0 0;
+    margin-top: 4vw;
+    transition: all 0.2s;
+}
+
+.form:hover{
+    transform:scale(1.05);
+    } 
+
+.protext{
+    display: flex;
+    justify-content: center;
+    
+}
+
+.protextbox{
+    width: 50vw;
+    height: 5.5vh;
+    border-radius:0 0 0.5vw 0.5vw;
+    background-color: rgb(5, 5, 80);
+    transition: all 0.2s;
+}
+
+.regtext{
+    color: white;
+    text-align: center;
+    font-style: italic;
+    font-size: 2vw;
+   }
+
+   .line2{
+    height: 0.05vw;
+    width: 100%;
+    background: linear-gradient(to bottom right, transparent, white, transparent);
+}
+
+   .bottom{
+    width: 100%;
+    height: 55vh;
+    background-color: rgb(93, 93, 191);
+   
+}
+
+.bottom h2{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    font-weight: 400;
+    font-size: 2.5vw;
+    padding-top: 2.5vw;
+    color: white;
+}
+
+.bottommainbox{
+    width: 100%;
+    height: 40vh;
+    display: flex;
+    justify-content: center;
+}
+
+.bottombox{
+    width: 70%;
+    height: 25vh;
+    background-color: whitesmoke;
+    margin-top: 3vw;
+    border-radius: 0.5vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn1{
+    width: 7vw;
+    height: 5.4vh;
+    border: 0.1vw solid darkslategrey;
+    border-radius: 0.3vw;
+    margin: 0.5vw;
+    font-size: 1vw;
+    color: darkslategrey;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s;
+}
+
+.gmail{
+    width: 1.5vw;
+    height: 3vh;
+    margin: 0.7vw;
+    transition: all 0.2s;
+}
+
+
+.btn1:hover{
+ background-color: rgb(189, 49, 39);
+ color: white;
+ border: 0.1vw solid rgb(189, 49, 39);
+}
+
+.btn2{
+    width: 7vw;
+    height: 5.4vh;
+    border: 0.1vw solid rgb(10, 102, 194);
+    border-radius: 0.3vw;
+    margin: 0.5vw;
+    font-size: 1vw;
+    color: rgb(10, 102, 194);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s;
+}
+
+.btn2:hover{
+ background-color: rgb(10, 102, 194);
+ color: white;
+}
+
+.Linkedin{
+    width: 1.5vw;
+    height: 3vh;
+    margin: 0.3vw;
+}
+   
+.btn3{
+    width: 7vw;
+    height: 5.4vh;
+    border: 0.1vw solid ;
+    border-radius: 0.3vw;
+    margin: 0.5vw;
+    font-size: 1vw;
+    color: rgb(36,41,46);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s;
+}
+
+.btn3:hover{
+    background-color: rgb(36,41,46);
+    color: white;
+}
+
+ .github0{
+    width: 1.5vw;
+    height: 3vh;
+    margin: 0.3vw;
+ }
+
+ .btn4{
+    width: 7vw;
+    height: 5.4vh;
+    border: 0.1vw solid ;
+    border-radius: 0.3vw;
+    margin: 0.5vw;
+    font-size: 1vw;
+    color: rgb(10, 102, 194);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s;
+}
+
+.btn4:hover{
+    background-color: rgb(1, 101, 225);
+    color: white;
+   }
+
+   .facebook{
+    width: 1.5vw;
+    height: 3vh;
+    margin: 0.3vw;
+}
+
+.btn5{
+    width: 7vw;
+    height: 5.4vh;
+    border: 0.1vw solid ;
+    border-radius: 0.3vw;
+    margin: 0.5vw;
+    font-size: 1vw;
+    color: rgb(29, 161, 242);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s;
+}
+
+.btn5:hover{
+    background-color: rgb(29, 161, 242);
+    color: white;
+}
+
+ .twitter{
+    width: 1.5vw;
+    height: 3vh;
+    margin: 0.3vw;
+ }
+
+ .borderlast{
+    height: 0.05vw;
+    width: 100%;
+    background: linear-gradient(to bottom right, transparent, white, transparent);
+}
+
+.last{
+    width: 100%;
+    height: 8vh;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.made{
+    color: white;
+    font-size: 1.5vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 100;
+}
+
+.heart{
+    width: 3vw;
+    height: 4vh;
+    margin-left: 0.5vw;
+    margin-right: 0.5vw;
+}
+
+.A1,.A2,.A3,.A4,.A5{
+    text-decoration: none;
+    }
+
+@media (max-width:600px) {
+    nav {
+        height: 9vh;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .logo {
+        width: 16vw;
+        height: 20vh;
+    }
+
+    nav ul li a {
+        font-size: 3vw;
+    }
+
+    .text {
+        text-align: center;
+        font-size: 5vw;
+        margin-top: 10vw;
+    }
+
+    .margin {
+        height: 4vh;
+    }
+
+    .biobox {
+        height: 100vh;
+        display: block;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .bioimg {
+        width: 100%;
+        height: 50vh;
+    }
+
+    .biotext {
+        width: 100%;
+        height: 50vh;
+        margin-top: 20vw;
+    }
+
+    .bio-text {
+        font-size: 3vw;
+    }
+
+    .bioimg img {
+        height: 60vh;
+        width: 80vw;
+        margin-left: 15vw;
+    }
+
+
+    .resume,
+    .talk,
+    .github,
+    .linkedin {
+        width: 21vw;
+        height: 4vh;
+        border-radius: 0.7vw;
+        font-size: 3vw;
+    }
+
+    .skillmain{
+        width: 100%;
+        height: 80vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+       
+    }
+    
+    .skillbox{
+        width: 50vw;
+        height: 70vh;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .html, .css ,.Javascript,.bootstrap,.tailwind,.react{
+        width: 45vw;
+        height: 8vh;
+        border: 0.1vw solid white;
+        border-radius: 1vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: white;
+        margin: 0.3vw;
+        transition: all 0.2s;
+    }
+    
+    .Github,.netlify{
+        width: 45vw;
+        height: 8vh;
+        border: 0.1vw solid white;
+        border-radius: 1vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: white;
+        margin: 0.3vw;
+        transition: all 0.2s;  
+    }
+    
+    .html img,.css img,.Javascript img,.bootstrap img,.tailwind img,.react img,.Github img,.netlify img{
+        width: 10vw;
+        height: 7vh;
+    }
+    
+    .html p,.css p,.Javascript p,.bootstrap p,.tailwind p,.react p,.Github p,.netlify p{
+        text-align: center;
+        font-size: 2.5vw;
+        font-weight: 600;
+        color: black;
+    }
+
+    .html:hover, .css:hover, .Javascript:hover ,.bootstrap:hover,.tailwind:hover,.react:hover,
+.Github:hover,.netlify:hover{
+    transform: scale(0.95);
+}
+
+.form{
+    width: 90vw;
+    height: 40vh;
+    border-radius: 1.5vw 1.5vw 0 0;
+    margin-top: 4vw;
+    transition: all 0.2s;
+}
+
+.protextbox{
+    width: 90vw;
+    height: 3.5vh;
+    border-radius:0 0 1.5vw 1.5vw;
+    background-color: rgb(5, 5, 80);
+}
+
+.regtext{
+    color: white;
+    text-align: center;
+    font-style: italic;
+    font-size: 4vw;
+   }
+
+   .projectbg{
+    width: 100%;
+    height: 55vh;
+    background-color: rgb(93, 93, 191);
+}
+
+.bottom{
+    width: 100%;
+    height: 20vh;
+    background-color: rgb(93, 93, 191);
+   
+}
+
+
+.bottombox{
+    width: 70%;
+    height: 10vh;
+    background-color: whitesmoke;
+    margin-top: 3vw;
+    border-radius: 0.5vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn1{
+    width: 10vw;
+    height: 4vh;
+    border: 0.1vw solid darkslategrey;
+    border-radius: 0.3vw;
+    margin: 0.5vw;
+    font-size: 1vw;
+    color: darkslategrey;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s;
+}
+
+.gmail{
+    width: 1.3vw;
+    height: 2vh;
+    margin: 0.7vw;
+    transition: all 0.2s;
+}
+
+.btn2{
+    width: 10vw;
+    height: 4vh;
+    border: 0.1vw solid rgb(10, 102, 194);
+    border-radius: 0.3vw;
+    margin: 0.5vw;
+    font-size: 1vw;
+    color: rgb(10, 102, 194);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s;
+}
+
+.Linkedin{
+    width: 1.3vw;
+    height: 2vh;
+    margin: 0.3vw;
+}
+
+.btn3{
+    width: 10vw;
+    height: 4vh;
+    border: 0.1vw solid ;
+    border-radius: 0.3vw;
+    margin: 0.5vw;
+    font-size: 1vw;
+    color: rgb(36,41,46);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s;
+}
+
+.github0{
+    width: 1.3vw;
+    height: 2vh;
+    margin: 0.3vw;
+ }
+
+ .btn4{
+    width: 10vw;
+    height: 4vh;
+    border: 0.1vw solid ;
+    border-radius: 0.3vw;
+    margin: 0.5vw;
+    font-size: 1vw;
+    color: rgb(10, 102, 194);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s;
+}
+
+.facebook{
+    width: 1.3vw;
+    height: 2vh;
+    margin: 0.3vw;
+}
+
+.btn5{
+    width: 10vw;
+    height: 4vh;
+    border: 0.1vw solid ;
+    border-radius: 0.3vw;
+    margin: 0.5vw;
+    font-size: 1vw;
+    color: rgb(29, 161, 242);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s;
+}
+
+.twitter{
+    width: 1.3vw;
+    height: 2vh;
+    margin: 0.3vw;
+ }
+
+ .img {
+    background-image: url("image40.jpg");
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+}
+
+ .text {
+    /* text-align: center; */
+    color: rgba(255, 204, 0, 0.876);
+    margin-left: 23%;
+    margin-top: -125%;
+}
+}
